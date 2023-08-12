@@ -1,0 +1,19 @@
+<!doctype>
+<html>
+    <head>
+        <title>appearance-changed-event demo</title>
+        <meta name="viewport" content="width=device-width,height=device-height,user-scalable=no,initial-scale=1,maximum-scale=1" />
+        <style>
+
+        </style>
+        <script>
+            window.addEventListener('appearance-changed', function(e) {
+                document.querySelector('H1').textContent = e.detail;
+            });
+        </script>
+    </head>
+    <body>
+        <h1>Unknown</h1>
+        <script src="src/appearance-changed-event.js"></script>
+    </body>
+</html>
