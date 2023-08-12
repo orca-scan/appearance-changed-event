@@ -16,9 +16,7 @@ Check `window.appearance` at any time, to check current setting.
 
 ### Development
 
-The project includes everything needed to tweak, including a node webserver. Run the following, then visit [http://localhost:8080](http://localhost:8080) in your browser.
-
-_You can test on a desktop using [Device Mode](https://developers.google.com/web/tools/chrome-devtools/device-mode/) in Google Chrome._
+The project includesa node webserver. Run the following, then visit [http://localhost:8080](http://localhost:8080) in your browser.
 
 ```bash
 git clone https://github.com/orca-scan/appearance-changed-event
