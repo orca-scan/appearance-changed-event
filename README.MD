@@ -1,6 +1,6 @@
 # appearance-changed-event
 
-A 1k pure JS script that fires an `appearance-changed` event when system theme changes, it also sets global `window.appearance` to `light` or `dark`.
+Adds OS `appearance-changed` event to the DOM in 1k of pure JavaScript.
 
 ## Usage
 

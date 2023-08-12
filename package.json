@@ -1,7 +1,7 @@
 {
   "name": "appearance-changed-event",
   "version": "1.0.0",
-  "description": "A 1k pure JS script that fires an `appearance-changed` event when system theme changes",
+  "description": "Adds OS `appearance-changed` event to the DOM in 1k of pure JavaScript.",
   "main": "src/appearance-changed-event.js",
   "scripts": {
     "start": "node server/dev-server.js",
