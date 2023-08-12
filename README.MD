@@ -27,10 +27,7 @@ npm start
 
 ### Update .min files
 
-To create a new version of the minified [appearance-changed-event.min.js](dist/appearance-changed-event.min.js) file from source, tweak the version number in `package.json` and run the following:
-
-```bash
-npm run build
+To create a new version of the minified [appearance-changed-event.min.js](dist/appearance-changed-event.min.js) file from source, tweak the version number in `package.json` and run `npm run build`
 ```
 
 ## History
