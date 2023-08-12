@@ -1,7 +1,7 @@
 {
   "name": "appearance-changed-event",
   "version": "1.0.0",
-  "description": "Adds OS `appearance-changed` event to the DOM in 1k of pure JavaScript.",
+  "description": "Adds `appearance-changed` event to detect OS changes to the DOM in 1k of pure JavaScript.",
   "main": "src/appearance-changed-event.js",
   "scripts": {
     "start": "node server/dev-server.js",
