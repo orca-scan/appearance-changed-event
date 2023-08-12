@@ -12,6 +12,8 @@ window.addEventListener('appearance-changed', function(e) {
 });
 ```
 
+Check `window.appearance` at any time, to check current setting.
+
 ### Development
 
 The project includes everything needed to tweak, including a node webserver. Run the following, then visit [http://localhost:8080](http://localhost:8080) in your browser.
