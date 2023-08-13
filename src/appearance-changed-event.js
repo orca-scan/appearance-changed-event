@@ -33,11 +33,9 @@
     // check initial appearance
     if (matchMediaDark.matches) {
         window.appearance = 'dark';
-        dispatchCustomEvent(document, 'appearance-changed', 'dark', true);
     }
     else if (matchMediaLight.matches) {
         window.appearance = 'light';
-        dispatchCustomEvent(document, 'appearance-changed', 'light', true);
     }
 
     /**
