@@ -12,7 +12,7 @@ window.addEventListener('appearance-changed', function(e) {
 });
 ```
 
-Check `window.appearance` at any time, to check current setting.
+Also exposes `window.appearance` which you can check at any time to get current OS setting.
 
 ### Development
 
