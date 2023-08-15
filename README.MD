@@ -1,6 +1,6 @@
 # appearance-changed-event
 
-Adds `appearance-changed` event to the DOM to detect OS changes, using 1k of pure JavaScript.
+Adds `appearance-changed` event to the DOM to detect OS theme changes, using 1k of pure JavaScript.
 
 ## Usage
 
