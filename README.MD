@@ -13,7 +13,8 @@ window.addEventListener('appearance-changed', function(e) {
 });
 ```
 
-It also exposes `window.appearance` which you can use to detect the current OS theme:
+It also adds `window.appearance` variable which you can use to check the current OS theme:
+
 ```js
 switch (window.appearance) {
     
