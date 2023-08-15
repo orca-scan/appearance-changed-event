@@ -49,4 +49,4 @@ For change-log, check [releases](https://github.com/orca-scan/appearance-changed
 
 ## License
 
-Licensed under [MIT License](LICENSE) &copy; Orca Scan, the [Barcode Scanner app](https://orcascan.com).
+Licensed under [MIT License](LICENSE) &copy; Orca Scan, build a [Barcode Scanner app](https://orcascan.com) without code.
