@@ -29,7 +29,7 @@ switch (window.appearance) {
 
 ### Development
 
-The project includes a node server, run the following then visit [http://localhost:8080](http://localhost:8080):
+The project includes a node server, run the following then visit [http://localhost:8080](http://localhost:8080)
 
 ```bash
 git clone https://github.com/orca-scan/appearance-changed-event
