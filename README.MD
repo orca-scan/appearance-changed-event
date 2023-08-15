@@ -33,3 +33,7 @@ To create a new version of the minified [appearance-changed-event.min.js](dist/a
 
 For change-log, check [releases](https://github.com/orca-scan/appearance-changed-event/releases).
 
+
+## License
+
+Licensed under [MIT License](LICENSE) &copy; Orca Scan, the [Barcode Scanner app](https://orcascan.com).
