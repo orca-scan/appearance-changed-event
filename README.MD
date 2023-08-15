@@ -1,6 +1,6 @@
 # appearance-changed-event
 
-Adds `appearance-changed` event to the DOM to detect OS theme changes, using 1k of pure JavaScript.
+A 1k script that adds `appearance-changed` event to detect OS theme changes
 
 ## Usage
 
@@ -13,7 +13,7 @@ window.addEventListener('appearance-changed', function(e) {
 });
 ```
 
-Also adds `window.appearance` variable which can be used to check the current OS theme:
+Also adds `window.appearance` which you can use to get the current OS theme:
 
 ```js
 switch (window.appearance) {
