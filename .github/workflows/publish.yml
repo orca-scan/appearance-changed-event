@@ -1,0 +1,52 @@
+name: Publish Package
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  packages: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      GITHUB_PACKAGES_TOKEN: ${{ secrets.GH_PACKAGES_READ_WRITE_TOKEN }}
+
+    steps:
+      - name: Add Github SSH Key
+        uses: webfactory/ssh-agent@v0.4.1
+        with:
+          ssh-private-key: ${{ secrets.JDMBP2_PRIVATE_SSH_KEY }}
+
+      - name: Get source
+        uses: actions/checkout@v4
+
+      - name: Get node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "16.20.1"
+          registry-url: "https://npm.pkg.github.com"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build package
+        run: npm run build
+
+      - name: Publish package
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Notify Slack fail
+        if: failure()
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+        uses: voxmedia/github-action-slack-notify-build@v1
+        with:
+          channel: developers
+          status: Publish failed
+          color: danger

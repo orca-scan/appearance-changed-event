@@ -1,12 +1,16 @@
 {
-  "name": "appearance-changed-event",
+  "name": "@orca-scan/appearance-changed-event",
+  "publishConfig": {
+	    "registry": "https://npm.pkg.github.com/"
+	},
   "version": "1.0.0",
   "description": "Adds `appearance-changed` event to the DOM to detect OS theme changes, using 1k of pure JavaScript.",
   "main": "src/appearance-changed-event.js",
   "scripts": {
     "start": "node server/dev-server.js",
     "build": "node_modules/gulp/bin/gulp.js build",
-    "clean": "node_modules/gulp/bin/gulp.js clean"
+    "clean": "node_modules/gulp/bin/gulp.js clean",
+    "prepublishOnly": "node -e \"var isGithubActions = process.env.GITHUB_ACTIONS === 'true'; if (!isGithubActions) { console.error('Local publish blocked'); process.exit(1); }\""
   },
   "repository": {
     "type": "git",
