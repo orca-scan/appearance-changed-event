@@ -15,10 +15,6 @@ jobs:
       GITHUB_PACKAGES_TOKEN: ${{ secrets.GH_PACKAGES_READ_WRITE_TOKEN }}
 
     steps:
-      - name: Add Github SSH Key
-        uses: webfactory/ssh-agent@v0.4.1
-        with:
-          ssh-private-key: ${{ secrets.JDMBP2_PRIVATE_SSH_KEY }}
 
       - name: Get source
         uses: actions/checkout@v4
